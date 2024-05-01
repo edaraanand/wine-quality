@@ -14,6 +14,7 @@ from sklearn.linear_model import ElasticNet
 from urllib.parse import urlparse
 import mlflow
 import mlflow.sklearn
+import dagshub
 
 import logging
 
@@ -75,6 +76,10 @@ if __name__ == "__main__":
         mlflow.log_metric("mae", mae)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+
+        # For remote server only (DagsHub)
+        remote_uri = "https://dagshub.com/edaraanand/wine-quality.mlflow"
+        mlflow.set_tracking_uri(remote_uri)
 
         # Model registry does not work with file store
         if tracking_url_type_store != "file":
