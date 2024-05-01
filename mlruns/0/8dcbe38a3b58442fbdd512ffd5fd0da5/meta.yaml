@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/anand/Projects/mlops/chest_cancer/mlruns/0/8dcbe38a3b58442fbdd512ffd5fd0da5/artifacts
+end_time: 1714446490713
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8dcbe38a3b58442fbdd512ffd5fd0da5
+run_name: amazing-bird-206
+run_uuid: 8dcbe38a3b58442fbdd512ffd5fd0da5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714446489646
+status: 3
+tags: []
+user_id: anand
